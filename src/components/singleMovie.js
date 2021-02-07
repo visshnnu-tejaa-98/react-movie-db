@@ -1,10 +1,11 @@
 const SingleMovie = ({ movie }) => {
+	let img = movie.imgURL;
 	return (
 		<div className='d-flex justify-content-center'>
 			<div className='card mb-3 card-width '>
 				<div className='row no-gutters'>
 					<div className='col-md-4'>
-						<img src={movie.imgURL} alt='...' />
+						<img src={`${img}`} alt='...' />
 					</div>
 					<div className='col-md-8'>
 						<div className='card-body '>
