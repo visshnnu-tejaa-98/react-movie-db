@@ -1,5 +1,9 @@
+import { MovieContext } from './movieContext';
+import { useContext } from 'react';
 const SingleMovie = ({ movie }) => {
 	let img = movie.imgURL;
+	const [movies, setMovies] = useContext(MovieContext);
+
 	return (
 		<div className='d-flex justify-content-center'>
 			<div className='card mb-3 card-width '>

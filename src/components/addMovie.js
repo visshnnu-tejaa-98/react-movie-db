@@ -28,7 +28,7 @@ const AddMovie = () => {
 		e.preventDefault();
 		setMovies((prevMovies) => [
 			...prevMovies,
-			{ name, price, imgURL: img, trailerURL: trailer, id },
+			{ name, price, imgURL: img, trailerURL: trailer, id: +id },
 		]);
 		history.push('/');
 	};
@@ -92,7 +92,7 @@ const AddMovie = () => {
 				</div>
 				<div className='form-group'>
 					<label htmlFor='id'>Id:</label>
-					<input type='text' className='form-control' id='id' value={id} onChange={updateId} />
+					<input type='number' className='form-control' id='id' value={id} onChange={updateId} />
 				</div>
 				<button type='submit' className='btn addBtn'>
 					Add Movie

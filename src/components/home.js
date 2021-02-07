@@ -1,9 +1,10 @@
 import SingleMovie from './singleMovie';
 import MovieCount from './movieCount';
 import { MovieContext } from './movieContext';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 const Home = () => {
 	const [movies, setMovies] = useContext(MovieContext);
+
 	return (
 		<div className='home container'>
 			<MovieCount />

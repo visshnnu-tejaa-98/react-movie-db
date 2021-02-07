@@ -48,3 +48,11 @@ body {
 	-ms-border-radius: 7px;
 	-o-border-radius: 7px;
 }
+.trash {
+	font-size: 1.5rem;
+	margin-left: 5%;
+	color: white;
+}
+.trash:hover {
+	color: red;
+}
