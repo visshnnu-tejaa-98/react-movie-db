@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: beige;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.brand {
+	font-family: 'Lobster', cursive;
+	color: rgb(16, 156, 16);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.addBtn {
+	background-color: #25db1e;
+	border: 2px solid #25db1e;
+	color: white;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.addBtn:hover {
+	background-color: transparent;
+	color: #25db1e;
+	border: 2px solid #25db1e;
 }
-
-.App-link {
-  color: #61dafb;
+.navHome {
+	text-decoration: none;
+	color: #25db1e;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navHome:hover {
+	text-decoration: none;
+	color: #15dd0e;
+}
+.card-width {
+	width: 540px;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+}
+.card-width img {
+	height: 160px;
+	width: 170px;
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
+}
+.span {
+	background-color: #25db1e;
+	color: white;
+	padding: 0.7%;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
 }
